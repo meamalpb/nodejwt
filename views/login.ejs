@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="./login.css">
+
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#" style="display:none;" >Login</a></li>
+                <li><a href="/logout">Logout</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="overlay">
+        <a class="close">&times;</a>
+            <div class="overlay__content">
+                <a href="#" >Login</a>
+                <a href="#">Register</a>
+                <a href="#">About</a>
+            </div>
+    </div>
+<form action="/login" method="POST">
+<div class="cent">
+    <div class="wrapper">
+        <div class="input-data">
+          <input type="text" name="email" required>
+                <div class="underline">
+                </div>
+            <label>Email</label>
+        </div>
+    </div>
+  <div class="wrapper">
+        <div class="input-data">
+            <input type="password" name="password" required>
+                <div class="underline">
+                </div>
+            <label>Password</label>
+        </div>
+        <button class="butt">submit</button>
+    </div>
+    
+</div>
+</form>
+</body>
+</html>
